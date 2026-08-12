@@ -1,0 +1,159 @@
+/*HEADER*/
+header{
+    color:blue;
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+
+/*NAV*/
+.flex-menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0.5rem;
+    background-color: blue;
+    gap: 5px;
+}
+.flex-menu li a{
+    text-decoration: none;
+    color: rgb(0, 240, 0);
+    font-weight: bold;
+}
+
+/* LAYOUT PAGINA*/
+/*Opcion con areas
+
+.grid-container1{
+    display: grid;
+    grid-template-areas: 
+    "header header "
+    "menu     main "
+    "footer footer ";
+}
+
+.header1{
+    grid-area: header;
+}
+
+.menu1{
+    grid-area:menu;
+}
+
+.main1{
+    grid-area:main;
+}
+
+.footer1{
+    grid-area: footer;
+}
+
+*/
+
+.grid-container {
+   display: grid;
+   grid-template-columns: 200px 1fr;
+   grid-template-rows: auto 1fr auto;
+   gap: 10px;
+}
+.header, .footer {
+   grid-column: 1 / 3; /*Ambos ocupan 2 columnas*/
+}
+.menu {
+   grid-column: 1 / 2; /* El menú ocupa la primera columna */
+}
+.main {
+   grid-column: 2 / 3; /*El contenido principal ocupa la segunda columna*/
+}
+
+
+/*PRODUCTOS*/
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.articulo{
+    width: 25vw;
+}
+
+
+/*RESEÑAS*/
+.reseñas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.card{
+    padding: 10px;
+    border: solid 1.5px lightcoral;
+    border-radius:4px;
+    box-shadow: black unset;
+    transition: transform 0.3s ease;
+}
+
+.card:hover{
+    transform: scale(1.05) translate(0px,-5px);
+}
+
+
+
+
+/*CONTACTO*/
+fieldset,fieldset input {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+    gap: 5px;
+}
+
+fieldset input:focus{
+    background-color: rgba(65, 164, 225, 0.144);
+    border-width: 0.5px;
+    border-color: rgb(20, 5, 37);
+}
+
+/*FOOTER*/
+footer{
+    background-color:cadetblue ;
+    color:blue ;
+    font-style: italic;
+}
+
+
+
+/*MEDIA QUERIES*/
+/* Pantallas pequeñas */
+@media only screen and (max-width: 600px) {
+   .grid-container {
+       grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+       grid-template-rows: auto 1fr auto;
+   }
+}
+
+@media only screen and (max-width: 768px) {
+   .reseñas {
+       grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+       grid-template-rows: auto 1fr auto;
+   }
+}
+
+/* Pantallas medianas */
+@media only screen and (min-width: 768px) {
+   .grid-container {
+       grid-template-columns: 200px 1fr; /* Dos columnas en pantallas medianas */
+       grid-template-rows: auto 1fr auto;   
+    }
+}
+/* Pantallas grandes */
+@media only screen and (min-width: 1200px) {
+   .grid-container {
+       grid-template-columns: 200px 1fr; /* Tres columnas en pantallas grandes */
+       grid-template-rows: auto 1fr auto;
+    }
+}
+

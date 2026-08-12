@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <title>TuTi enda</title>
+</head>
+
+<body>
+
+    <div class="grid-container">
+
+        <header class="header">
+            <h1>TuTi enda Favorita</h1>
+            <h2>No lo necesitas pero te lo vendo igual</h2>
+            <img src="" alt="Logo de la empresa">
+        </header>
+
+        <nav class="menu">
+            <ul class="flex-menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <main class="main">
+            <section class="productos">
+                <article class="articulo">
+                    <img src="" alt="">
+                    <h1>Producto 1</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eaque quaerat cumque deleniti
+                        dicta ea hic doloribus non cum voluptates repellendus, officia beatae reiciendis adipisci
+                        architecto animi itaque rem exercitationem.</p>
+                    <strong>$1500</strong>
+                    <button><i class="fas fa-shopping-cart"></i> AGREGAR</button>
+                </article>
+                <article class="articulo">
+                    <img src="" alt="">
+                    <h1>Producto 2</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum dolorem tempora perferendis
+                        quae! Ad ab rem nobis ut eum sapiente voluptatibus cumque, vel necessitatibus ullam quaerat
+                        repellendus, soluta magnam? Dolorum.</p>
+                    <strong>$1500</strong>
+                    <button><i class="fas fa-shopping-cart"></i> AGREGAR</button>
+                </article>
+                <article class="articulo">
+                    <img src="" alt="">
+                    <h1>Producto 3</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium facilis voluptatem tenetur!
+                        Expedita animi similique, architecto delectus porro consectetur, odit inventore, eligendi
+                        voluptas ipsa rerum at. Minima aliquid quidem qui.</p>
+                    <strong>$1500</strong>
+                    <button><i class="fas fa-shopping-cart"></i> AGREGAR</button>
+                </article>
+            </section>
+
+            <section class="reseñas">
+                <section class="card">
+                    <h3>NOMBRE</h3>
+                    <p>Opinion</p>
+                </section>
+                <section class="card">
+                    <h3>NOMBRE</h3>
+                    <p>Opinion</p>
+                </section>
+                <section class="card">
+                    <h3>NOMBRE</h3>
+                    <p>Opinion</p>
+                </section>
+            </section>
+            <section id="contacto">
+
+
+                <form action="https://formspree.io/f/xvkpaqjn" method="POST">
+                    <fieldset>
+                        <legend>Información Personal</legend>
+
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" placeholder="Tu mail">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Motivo y Mensaje</legend>
+
+                        <label for="motivo">Motivo:</label>
+                        <select id="motivo" name="motivo">
+                            <option value="">-- Seleccioná una opción --</option>
+                            <option value="consulta">Consulta</option>
+                            <option value="soporte">Soporte</option>
+                            <option value="otros">Otros</option>
+                        </select>
+
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="3" cols="30" placeholder="Tu mensaje"></textarea>
+                    </fieldset>
+
+                    <section>
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Limpiar</button>
+                    </section>
+                </form>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <h4>Contacto</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, a repudiandae amet nesciunt tempora
+                pariatur sapiente voluptate. Provident eos minima sapiente, deleniti, repudiandae, ullam optio eaque
+                neque
+                consectetur quidem maxime?</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
